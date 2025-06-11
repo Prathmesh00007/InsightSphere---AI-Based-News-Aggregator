@@ -1,6 +1,7 @@
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr, Field, validator
 from typing import Optional
 from datetime import datetime
+from bson import ObjectId
 
 class UserBase(BaseModel):
     """Base user model with common attributes"""
@@ -15,11 +16,17 @@ class UserCreate(UserBase):
 
 class UserInDB(UserBase):
     """Model for user data in database"""
-    id: str = Field(..., alias="_id")  # Add this line.
+    id: str = Field(..., alias="_id")  # Use alias to map _id to id
     hashed_password: str
     disabled: bool = False
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)
+
+    @validator("id", pre=True)
+    def convert_objectid_to_str(cls, v):
+        if isinstance(v, ObjectId):
+            return str(v)
+        return v
 
 class UserUpdate(BaseModel):
     """Model for user updates"""
