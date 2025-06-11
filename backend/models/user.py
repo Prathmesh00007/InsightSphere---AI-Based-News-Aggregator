@@ -15,6 +15,7 @@ class UserCreate(UserBase):
 
 class UserInDB(UserBase):
     """Model for user data in database"""
+    id: str = Field(..., alias="_id")  # Add this line.
     hashed_password: str
     disabled: bool = False
     created_at: datetime = Field(default_factory=datetime.utcnow)
