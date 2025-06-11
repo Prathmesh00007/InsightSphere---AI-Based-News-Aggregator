@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 import logging
 import asyncio
 import certifi
+import ssl
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -28,7 +29,8 @@ async def connect_to_mongodb():
     try:
         client = AsyncIOMotorClient(MONGODB_URL,
             tls=True,
-            tlsCAFile=certifi.where())
+            tlsCAFile=certifi.where(),
+            ssl_version=ssl.PROTOCOL_TLSv1_2)
         db = client[DATABASE_NAME]
         # Verify the connection by issuing a ping command.
         await db.command("ping")
