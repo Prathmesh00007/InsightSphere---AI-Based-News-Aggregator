@@ -16,10 +16,14 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(title="Insight Sphere API", description="AI-powered news aggregator API")
 
+origins = [
+    "https://insight-sphere.netlify.app",
+    # Add more origins if needed.
+]
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, replace with specific origins
+    allow_origins=origins,  # or use ["*"] to allow all origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
