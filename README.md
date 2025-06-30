@@ -125,10 +125,12 @@ Translate – switch language with one click.
 
 Voice Commands – say “next article” or “summarize this.”
 
-📝 API Reference
+## API Reference
+
 Base URL: http://localhost:8000/api
 
 Endpoint	Method	Description
+
 /articles	GET	List all aggregated articles
 
 /articles/{id}	GET	Get full article, summary, and translations
@@ -137,7 +139,7 @@ Endpoint	Method	Description
 
 /preferences	GET/PUT	Get or update user preference object
 
-🤝 Contributing
+## Contributing
 Fork the repo
 
 Create a new branch: git checkout -b feature/YourFeature
