@@ -104,15 +104,17 @@ BACKEND_PORT=8000
 Running Locally
 Start the backend server
 
-bash
+```bash
 cd backend
 uvicorn app.main:app --reload
 Start the React frontend
+```
 
-bash
+```bash
 cd frontend
 npm run start
 Open http://localhost:3000 in your browser.
+```
 
 
 Home – sees latest aggregated headlines.
