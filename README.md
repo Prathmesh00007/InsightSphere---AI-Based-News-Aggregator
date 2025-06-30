@@ -57,17 +57,29 @@ InsightSphere is a full-stack web application that continuously pulls, processes
 
 ## 📂 Repository Structure  
 InsightSphere/ 
+
 ├── backend/ # REST API + AI pipeline 
+
 │ ├── app/ # FastAPI routes, controllers 
+
 │ ├── models/ # Pydantic / DB schemas 
+
 │ ├── services/ # Scraper, summarizer, translator modules 
+
 │ └── requirements.txt 
+
 │── frontend/ # React application 
+
 │ ├── public/ # Static assets (index.html, favicon) 
+
 │ ├── src/ # Components, pages, hooks, styles 
+
 │ └── package.json 
+
 │ ├── InsightSphere_New/ # Internal prototypes or legacy code 
+
 ├── .vscode/ # Editor configuration 
+
 └── README.md # ← you are here
 
 
