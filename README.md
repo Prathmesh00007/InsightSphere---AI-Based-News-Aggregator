@@ -97,12 +97,10 @@ Create a `.env` in `backend/`:
 ```dotenv
 # Server  
 BACKEND_HOST=0.0.0.0  
-BACKEND_PORT=8000  
+BACKEND_PORT=8000
+```
 
-# AWS Translate (if used)  
-AWS_ACCESS_KEY_ID=YOUR_KEY  
-AWS_SECRET_ACCESS_KEY=YOUR_SECRET  
-AWS_REGION=us-east-1  
+
 Running Locally
 Start the backend server
 
@@ -116,8 +114,6 @@ cd frontend
 npm run start
 Open http://localhost:3000 in your browser.
 
-📺 Usage & Screenshots
-(Add screenshots or animated GIFs here to showcase the UI in action.)
 
 Home – sees latest aggregated headlines.
 
