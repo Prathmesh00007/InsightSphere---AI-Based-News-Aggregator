@@ -130,8 +130,11 @@ Base URL: http://localhost:8000/api
 
 Endpoint	Method	Description
 /articles	GET	List all aggregated articles
+
 /articles/{id}	GET	Get full article, summary, and translations
+
 /articles/{id}/summary	POST	Regenerate summary (supports query params)
+
 /preferences	GET/PUT	Get or update user preference object
 
 🤝 Contributing
