@@ -1,0 +1,8 @@
+.font-bolder{
+    font-weight: 600;
+}
+
+nav .links a{
+    font-size: 22px;
+    font-weight: 500;
+}

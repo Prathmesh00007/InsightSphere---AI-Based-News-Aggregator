@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .max-w-md {
+    max-width: 400px; /* Set a maximum width for the form */
+  }
+  
+  h2 {
+    color: #4A90E2; /* Primary color for headings */
+  }
+  
+  .text-red-600 {
+    color: #e53e3e; /* Red color for error messages */
+  }
+  
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 15px; /* Add more padding for inputs */
+    border: 1px solid #d1d5db; /* Lighter border color */
+    border-radius: 5px; /* Slightly more rounded corners */
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-color: #4A90E2; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  button {
+    background-color: #4A90E2; /* Primary button color */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none; /* Remove border */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #357ABD; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  a {
+    color: #4A90E2; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s ease;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #357ABD; /* Darker shade on hover */
+  }
+  
+  .mt-4 {
+    margin-top: 16px; /* Add some space above */
+  }
+  
